@@ -1,7 +1,7 @@
 import { Container } from "./container";
 import { Button } from "./button";
 
-import logo from "@/assets/logo.svg";
+import logo from "/assets/logo.svg";
 
 export function Header() {
   return (

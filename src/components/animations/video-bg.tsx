@@ -26,7 +26,7 @@ export function VideoBg() {
           preload="auto"
           className="sticky top-0 h-screen w-full object-cover"
         >
-          <source src="/src/assets/videos/showroom.mp4" type="video/mp4" />
+          <source src="assets/videos/showroom.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </motion.div>

@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import phone01 from "@/assets/mockups/iphone01.png";
-import phone02 from "@/assets/mockups/iphone02.png";
+import phone01 from "/assets/mockups/iphone01.png";
+import phone02 from "/assets/mockups/iphone02.png";
 
 export function PhoneScroll() {
   const { scrollY } = useScroll();
