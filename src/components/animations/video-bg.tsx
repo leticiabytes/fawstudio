@@ -43,14 +43,11 @@ export function VideoBg() {
           viewport={{ amount: 0.98 }}
         >
           <h1 className="mb-10 text-4xl font-bold md:text-5xl">
-            Faw studio lorem ipsum. <br />
-            Dolor sit a met.
+            Faw Studios, imagination knows no boundaries.
           </h1>
           <Button className="mb-16" size="large">
             Book a call
           </Button>
-
-          {/* <p className="font-semibold">Watch on the 📺 app.</p> */}
         </motion.div>
       </Container>
     </div>
