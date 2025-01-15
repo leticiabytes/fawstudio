@@ -16,9 +16,9 @@ export function PhoneScroll() {
     <>
       <motion.div
         style={{ y, x, opacity: phoneOpacity }}
-        className="absolute top-[68px] z-50"
+        className="absolute top-[26px] z-50"
       >
-        <img src={phone01} alt="Iphone mockup" className="w-[283px]" />
+        <img src={phone01} alt="Iphone mockup" className="w-[480px]" />
       </motion.div>
 
       <motion.div
