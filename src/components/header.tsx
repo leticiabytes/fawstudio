@@ -19,7 +19,6 @@ export function Header() {
       </header>
       <div className="bg-darker sticky top-0 text-white z-50">
         <Container className="flex min-h-[--header-row-height] items-center justify-between">
-          {/* <p className="text-xl font-semibold">FAW</p> */}
           <img src={logo} alt="FAW Logo" />
           <Button size="small">Book a call</Button>
         </Container>
