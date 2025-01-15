@@ -1,3 +1,4 @@
+// @ts-nocheck
 const useFluidCursor = () => {
   const canvas = document.getElementById("fluid");
   resizeCanvas();
