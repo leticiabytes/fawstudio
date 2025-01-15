@@ -6,7 +6,7 @@ import {
 } from "@tabler/icons-react";
 import { ShimmerButton } from "@/components/ui";
 
-import logoDark from "@/assets/logo-dark.svg";
+import logoDark from "/assets/logo-dark.svg";
 
 export function CTA() {
   return (

@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import phone01 from "@/assets/mockups/iphone01.png";
-import phone02 from "@/assets/mockups/iphone02.png";
+import phone01 from "/assets/mockups/iphone01.png";
+import phone02 from "/assets/mockups/iphone02.png";
 
 export function PhoneScroll() {
   const { scrollY } = useScroll();
@@ -16,9 +16,9 @@ export function PhoneScroll() {
     <>
       <motion.div
         style={{ y, x, opacity: phoneOpacity }}
-        className="absolute top-[68px] z-50"
+        className="absolute top-[26px] z-50"
       >
-        <img src={phone01} alt="Iphone mockup" className="w-[283px]" />
+        <img src={phone01} alt="Iphone mockup" className="w-[480px]" />
       </motion.div>
 
       <motion.div

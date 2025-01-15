@@ -1,70 +1,55 @@
 import { Container } from "@/components/container";
 import { FadeIn } from "@/components/fade-in";
 
-import { Button } from "../button";
-import { ShimmerButton } from "../ui";
+import { PriceCard } from "../ui/price-card";
 
 export function Usps() {
+  const offerings = [
+    "12 videos/month (3/week)",
+    "Unlimited revisions",
+    "24/7 technical support",
+  ];
+
   return (
     <Container className="relative z-10 max-w-[980px] space-y-12 py-36 text-3xl font-bold text-white md:text-4xl">
       <FadeIn>
-        <p>FAW Lorem ipsum dolor, sit amet </p>
+        <p>Everything you need for exceptional videos </p>
       </FadeIn>
       <FadeIn>
-        <p>
-          Repellat neque quas possimus accusamus blanditiis. In natus aliquid
-          ullam excepturi
-        </p>
+        <p>Let’s turn your ideas into impactful stories.</p>
       </FadeIn>
       <FadeIn>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Pick a perfect service</p>
       </FadeIn>
       <FadeIn>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Choose the one that suits you and let's get started</p>
       </FadeIn>
       <div className="pt-20">
         <FadeIn>
           <div className="flex gap-y-8 flex-col md:gap-x-4 md:flex-row">
-            <div className="flex-1">
-              <span className="text-xl font-normal text-zinc-200">
-                Lorem ipsum
-              </span>
-              <h4 className="leading-10 mb-4">dolor sit amet consectetur...</h4>
-              <p className="text-zinc-600 text-sm font-normal mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                alias rem voluptas corrupti excepturi quis at saepe ab
-              </p>
-              <Button className="w-full">Book a call</Button>
-            </div>
+            <PriceCard
+              badge="Silver Plan"
+              iconBadge="🎥"
+              productName="Starter Creator"
+              description="Perfect for small projects or beginners—essential video production services at an affordable price."
+              offerings={offerings}
+            />
 
-            <div className="flex-1">
-              <span className="text-xl font-normal text-zinc-200">
-                Lorem ipsum
-              </span>
-              <h4 className="leading-10 mb-4">dolor sit amet consectetur...</h4>
-              <p className="text-zinc-600 text-sm font-normal mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                alias rem voluptas corrupti excepturi quis at saepe ab
-              </p>
-              {/* <Button>Know more</Button> */}
-              <ShimmerButton className="shadow-2xl w-full">
-                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                  Book a call
-                </span>
-              </ShimmerButton>
-            </div>
+            <PriceCard
+              badge="Gold Plan"
+              iconBadge="📺"
+              productName="Pro Producer"
+              description="For brands looking to scale up with motion design and YouTube optimization."
+              offerings={offerings}
+            />
 
-            <div className="flex-1">
-              <span className="text-xl font-normal text-zinc-200">
-                Lorem ipsum
-              </span>
-              <h4 className="leading-10 mb-4">dolor sit amet consectetur...</h4>
-              <p className="text-zinc-600 text-sm font-normal mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                alias rem voluptas corrupti excepturi quis at saepe ab
-              </p>
-              <Button>Showcase</Button>
-            </div>
+            <PriceCard
+              badge="Most Popular"
+              iconBadge="💎"
+              productName="Elite Creator"
+              description="The full-service experience, including scriptwriting, high-end production, and exclusive creative consulting."
+              offerings={offerings}
+            />
           </div>
         </FadeIn>
       </div>
