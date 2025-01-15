@@ -1,5 +1,7 @@
-import { cn } from "@/lib/utils.ts";
 import React, { useEffect, useState } from "react";
+import { cn } from "@/lib/utils.ts";
+
+import { HoverBorderGradient } from "./hover-border-gradient";
 
 export const InfiniteMovingCards = ({
   items,
@@ -83,12 +85,19 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item) => (
-          <img
-            key={item.id}
-            src={item.src}
-            alt="gif"
-            className="bottom-12 rounded-2xl border flex-shrink-0 border-slate-700 p-2 object-cover w-[242px] h-[150px]"
-          />
+          <HoverBorderGradient
+            containerClassName="rounded-2xl bg-transparent"
+            className="p-1"
+          >
+            <img
+              key={item.id}
+              src={item.src}
+              alt="gif"
+              className="bottom-12 rounded-2xl p-2 object-cover flex-shrink-0 w-[800px] h-[600px]"
+              // w-[390px] h-[250px]
+              //w-[242px] h-[150px]
+            />
+          </HoverBorderGradient>
         ))}
       </div>
     </div>
