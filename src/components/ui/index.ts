@@ -4,3 +4,7 @@ export * from "./shooting-stars";
 export * from "./stars-background";
 export * from "./shimmer-button";
 export * from "./animated-text";
+export * from "./map";
+export * from "./keyboard";
+export * from "./logo-cluster";
+export * from "./bento-card";
